@@ -1,0 +1,45 @@
+<idea-plugin version="2">
+    <id>com.javils.ThemeSwitcher</id>
+    <name>ThemeSwitcher</name>
+    <version>1.1</version>
+    <vendor email="javiluke93@gmail.com" url="">JaviLS</vendor>
+
+    <description><![CDATA[
+      Change the theme of IDE depends of the hour. Between 20 and 8 it use Darcula and Default the rest.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Add compatibility with other IDEs.
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="131.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>ColorScheme</implementation-class>
+        </component>
+
+    </application-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="ThemeSwitcher.Switcher" class="Switcher" text="Change theme" description="Change theme">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>
