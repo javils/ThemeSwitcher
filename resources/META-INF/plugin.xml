@@ -1,15 +1,16 @@
 <idea-plugin version="2">
     <id>com.javils.ThemeSwitcher</id>
     <name>ThemeSwitcher</name>
-    <version>1.1</version>
+    <version>1.2</version>
     <vendor email="javiluke93@gmail.com" url="">JaviLS</vendor>
 
     <description><![CDATA[
-      Change the theme of IDE depends of the hour. Between 20 and 8 it use Darcula and Default the rest.
+      Change the theme of IDE between Darcula and Default depends of the hour that you put into the Settings. You can change
+      the hours in Preferences > Other Settings > Theme Switcher.
     ]]></description>
 
     <change-notes><![CDATA[
-      Add compatibility with other IDEs.
+      Add Settings to preference view.
     ]]>
     </change-notes>
 
