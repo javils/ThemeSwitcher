@@ -26,6 +26,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService serviceImplementation="PluginSettings"/>
+        <applicationConfigurable instance="SettingsConfigurable"/>
     </extensions>
 
     <application-components>
