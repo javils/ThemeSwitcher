@@ -10,7 +10,6 @@ import com.intellij.ui.JBColor;
 import javax.swing.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -24,10 +23,6 @@ class SwitchTheme {
     private static final String DEFAULT_THEME = "Default";
 
     void initTheme() {
-        LocalDateTime currentTime = LocalDateTime.now();
-        int hour = currentTime.getHour();
-        int min = currentTime.getMinute();
-
         PluginSettings settings = ServiceManager.getService(PluginSettings.class);
 
         if (settings.timeToLightMs == null)
@@ -112,7 +107,6 @@ class SwitchTheme {
             makeActiveScheme = DARCULA_THEME;
 
         final EditorColorsScheme scheme = colorSchemeManager.getScheme(makeActiveScheme);
-
 
         if (scheme != null) {
             colorSchemeManager.setGlobalScheme(scheme);
