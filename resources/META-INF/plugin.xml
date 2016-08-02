@@ -7,21 +7,17 @@
     <description><![CDATA[
       Change the theme of IDE between Darcula and Default depends of the hour that you put into the Settings. You can change
       the hours in Preferences > Other Settings > Theme Switcher.
+
+      Or you can change the theme Manually in Tool > Change Theme.
     ]]></description>
 
     <change-notes><![CDATA[
-      Add Settings to preference view.
+      Now the plugin change automatically the theme when the times comes.
     ]]>
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="131.0"/>
-
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
 
     <depends>com.intellij.modules.lang</depends>
 
